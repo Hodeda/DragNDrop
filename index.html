@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/enhanced-style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/app.js" defer></script>
+		<title>Project Tracker</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<h1 class="tracker-title">Project Tracker</h1>
+		</header>
+
+		<main class="content-wrapper">
+			<section class="project-entry">
+				<h2 class="entry-heading">Register New Project</h2>
+				<form id="project-form" class="project-creator">
+					<div class="input-group">
+						<label for="title" class="input-label">Project Title:</label>
+						<input type="text" id="title" class="text-field" required />
+					</div>
+					<div class="input-group">
+						<label for="description" class="input-label">Description:</label>
+						<textarea id="description" class="text-area" required></textarea>
+					</div>
+					<div class="input-group">
+						<label for="people" class="input-label">Team Members:</label>
+						<input type="number" id="people" class="text-field" required />
+					</div>
+					<button type="submit" class="submit-button">Add to Board</button>
+				</form>
+			</section>
+
+			<section class="project-board active-board">
+				<h3 class="board-title">Ongoing Projects</h3>
+				<ul id="active-projects-list" class="project-list"></ul>
+			</section>
+
+			<section class="project-board completed-board">
+				<h3 class="board-title">Completed Projects</h3>
+				<ul id="finished-projects-list" class="project-list"></ul>
+			</section>
+		</main>
+	</body>
+</html>
